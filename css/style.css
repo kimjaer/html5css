@@ -1,265 +1,47 @@
-@font-face {
-    font-family: 'GL';
-    font-weight: 300;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
-    font-display: swap;
-} 
-@font-face {
-    font-family: 'GM';
-    font-weight: 500;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
-    font-display: swap;
-} 
-@font-face {
-    font-family: 'GB';
-    font-weight: 700;
-    font-style: normal;
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
-    font-display: swap;
-} 
 
-:root{
-    --colorGreen : #cedfc3;
-    --colorDGreen : #647367;
-    --colorBg : #f8f8e7;
-    --colorGBg : #d6e3ca;
-    --colorBtn : #ce5561;
-    --bodyc : #474747;
-}
-body{
-    font-family: 'GM';
-    color: var(--bodyc);
 
+
+#popup {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 150px;
+  height: 120px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
 }
 
-/* @media (max-width:1024px){
-    body{
-    }
+#popup button {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+
+.popupdiv:before{
+  content: "";
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.popupdiv #popup {
+  display: block;
+}
+
+/* .popupdiv{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 } */
-
-/* @media (max-width:768px){
-    body{
-        background-color: rgb(179, 255, 0);
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-#box{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background-color: black;
-    transition: transform 0.5s;
-    text-align: center;
-    
-}
-
-
-#box:hover{
-    /* width: 30rem;
-    height: 30rem; */
-    transform: scale(1.2);
-    background-color: chartreuse;
-}
-
-#box::before{
-    content: "뭐라고?";
-    color: white;
-    text-align: center;
-    /* display: flex;
-    justify-content: center; 
-    align-item: center */
-    text-align: center;
-    display: block;
-    line-height: 10rem;
-}
-
-#box:hover::before{
-    content: "롤오버";
-    color: yellow;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container{
-    max-width:1280px;
-    margin: 0 auto;
-}
-
-#mainBanner{
-    background: url(../img/bg.jpg) no-repeat ;
-    background-size: cover;
-    height:55vw; /*반응형처리완료 : 화면너비를 100vw로 계산해서 */
-}
-#mainBanner img{
-    max-height:475px;
-    height: 50%;
-}
-
-#mainBanner .container{
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-#introduce{
-    background-color: var(--colorBg);
-
-}
-#introduce .container{
-
-}
-
-.description{
-    display:inline-flex;   
-    margin-top: -5rem;
-    width:100%;
-}
-.description li{
-    background-color: var(--colorGreen);
-    flex-grow: 1; /* 나머지 영역만큼 맞춰줄께*/
-    margin: 0  0.5rem;
-    padding: 1rem;
-    background-repeat: no-repeat;
-    background-size: auto 50%;
-    border:1.5rem solid var(--colorGreen);
-}
-.description li p{
-    color:var(--colorDGreen);
-    margin-top: 8rem;
-    font-family: 'GM';
-    font-size: 1.8em;
-    line-height: 1.2;
-}
-.description .face{
-    background-image: url(../img/face.png); 
-    background-position: top right;    
-}
-.description .box1{
-    background-image: url(../img/box2.png); 
-    background-position: top right;   
-}
-.description .box2{
-    background-image: url(../img/box3.png); 
-    background-position: top right;     
-}
-.description .face:before{
-    content: "01";
-}
-.description .box1:before{
-    content: "02";
-}
-.description .box2:before{
-    content: "03";
-}
-
-.d-flex{
-    display: flex;
-}
-
-.jcc{
-    justify-content: center;
-}
-
-.aic{
-    align-items: center;
-}
-
-.tac{
-    text-align: center;
-}
-
-.tar{
-    text-align: right;
-}
-
-.d-none{
-    display: none;
-}
-
-.tr{
-    transition: all 0.2s;
-}
-
-.position-relative{
-    position: relative;
-}
-
-.p-absolute {
-    position: absolute;
-}
-
-.d-inline{
-    display: inline;
-}
-
-.d-block{
-    display: block
-}
-
-.pt{
-    position:top;
-}
-
-.p-fixed {
-    position: fixed;
-}
-
-.p-sticky {
-    position: sticky;
-}
-.w-100{width: 100%;}
-.h-100{height: 100%;}
-.hv-100{height: 100vh;}
-.wv-100{width: 100vw;} 
 
