@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/family.min.css">
+</head>
+<style>
+    #quick {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%);
+  width: 40px;
+}
+
+#quick li a {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  white-space: nowrap;
+  border: 1px solid #222;
+}
+
+#quick li{
+  display: flex;
+}
+
+#quick li:hover{
+  justify-content: end;
+}
+
+#quick a span {
+  width: 40px;
+}
+
+</style>
+<body>
+
+    <div id="quick">
+        <ul>
+            <li><a href=""><span>보임</span>롤오버해야보임</a></li>
+            <li><a href=""><span>보임</span>롤오버해야보임</a></li>
+            <li><a href=""><span>보임</span>롤오버해야보임</a></li>
+            <li><a href=""><span>보임</span>롤오버해야보임</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .bby * {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+
+        .bby ul,
+        .bby li,
+        .bby dl,
+        .bby dt,
+        .bby dd,
+        .bby ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .d-flex {
+            display: flex
+        }
+
+        .jcb {
+            justify-content: space-between;
+        }
+
+        .aic {
+            align-items: center;
+        }
+
+        #gnb li a {
+            padding: 0 0 0 2rem;
+
+        }
+
+        #hd {
+            border-bottom: 1px solid #222;
+            padding: 2rem 0;
+        }
+
+        #hd h1 {
+            height: 2rem;
+        }
+
+        #hd h1 img {
+            height: 100%;
+        }
+
+        #hd h1:hover img {
+            display: none;
+        }
+
+        #hd h1:hover:before {
+            content: "로고있던자리";
+        }
+    </style>
+</head>
+
+<body class="bby">
+    <header id="hd">
+        <div class="container d-flex jcb aic">
+            <h1>
+                <a href=""><img src="https://cdn.imweb.me/thumbnail/20210824/9f4885d0d2739.png" alt=""></a>
+            </h1>
+            <ul id="gnb" class="d-flex">
+                <li><a href="">메뉴</a></li>
+                <li><a href="">메뉴</a></li>
+                <li><a href="">메뉴</a></li>
+                <li><a href="">메뉴</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+// .familywrap>button{패밀리사이트}+family>ul>li*4>a{패밀리사이트들}
+
+
+// body {
+//   height: 100vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+
+// .familywrap {
+//   position: relative;
+
+//   &:hover {
+//     .family {
+//       display: block;
+//     }
+//     button {
+//       &::after {
+//         content: "-";
+//       }
+//     }
+//   }
+
+
+
+//   // 너비는 엄마한테 높이는 자식한테인데 엄마가 d-flex 하면 애들이 center가 아닌 한쪽구석으로 감. 옆에 누가 올까봐
+//   button {
+//     background-color: transparent;
+//     border: 1px solid #222;
+//     position: relative;
+//     padding: 2rem 4rem;
+//     border-radius: 4rem;
+//     font-size: 1.8rem;
+//     letter-spacing: -0.085em;
+
+//     &:after {
+//       content: "+";
+//       position: absolute;
+//       right: 2rem;
+//       font-size: 2rem;
+//     }
+//   }
+
+//   .family {
+//     border: 1px solid #222;
+//     position: absolute;
+//     bottom: 100%;
+//     left: 0;
+//     width: 100%;
+//     text-align: center;
+//     display: none;
+//     border-radius: 2rem;
+
+//     ul {
+//       list-style: none;
+//       margin: 0;
+//       padding: 0;
+//       line-height: 2;
+
+//       li {
+//         a {}
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
